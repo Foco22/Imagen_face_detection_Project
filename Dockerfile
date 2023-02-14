@@ -16,7 +16,5 @@ EXPOSE 8000
 
 CMD ["python", "app.py", "runserver", "0.0.0.0:8000"]
 
-<<<<<<< HEAD
-=======
 CMD python app.py
->>>>>>> 998150583a81a7b539256fb52414c3ac4dfdbb08
+
