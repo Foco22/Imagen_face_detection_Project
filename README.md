@@ -1,1 +1,1 @@
-# Imagen_face_detection_Project
+# Proyecto de Imagen usando Docker
