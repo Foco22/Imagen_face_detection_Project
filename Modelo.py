@@ -88,7 +88,6 @@ def detecion_face(imagePath):
         embedding_customer = embedding_customer.flatten()
         
         score = cosine(embedding_original, embedding_customer)
-        print(score)
         if score <= thresh: 
           #cv2.rectangle(img_reactangulo, (x1, y1), (x2, y2), (255, 0, 0), 2)  
           #result_BGR = cv2.cvtColor(face, cv2.COLOR_RGB2BGR)
