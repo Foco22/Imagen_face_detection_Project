@@ -20,7 +20,7 @@ thresh=0.5
 def my_face():
 
 
-  filename_list = ['francisco.jpeg']
+  filename_list = ['picture.jpeg']
      
 
   picture_list = []
