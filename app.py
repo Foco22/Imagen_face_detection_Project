@@ -11,6 +11,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from fastapi.encoders import jsonable_encoder
 
 
+
 ###################### API #########################################
 
 app = FastAPI()
@@ -44,8 +45,8 @@ def create_upload_file(file: UploadFile = File(None)):
     elif 'My face does not appear in the picture' == modelo_resultados:
       return JSONResponse(status_code=200, content={"message": "My face does not appear in the picture"})
 
-    elif 'There is any face in the pictue' == modelo_resultados:
-      return JSONResponse(status_code=200, content={"message": "There is any face in the picture"})
+    elif 'The picture does not contain any faces' == modelo_resultados:
+      return JSONResponse(status_code=200, content={"message": 'The picture does not contain any faces'})
 
 @app.exception_handler(500)
 async def internal_exception_handler(request: Request, exc: Exception):

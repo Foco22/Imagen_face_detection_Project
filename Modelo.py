@@ -97,7 +97,7 @@ def detecion_face(imagePath):
           return 'My face appears in the picture'
 
     return 'My face does not appear in the picture'  
-  return 'There is any face in the pictue'
+  return 'The picture does not contain any faces'
 
 
 #print(detecion_face('francisco1.jpeg'))
