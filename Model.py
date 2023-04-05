@@ -61,7 +61,7 @@ def face_detection(imagePath):
         face_return.extend(faces_lista)
         face_return = np.asarray(face_return)
 
-        model = VGGFace(model='resnet50', include_top=False, input_shape=(modelo_constants.input_shape_x,modelo_constants.input_shape_y,modelo_constants.input_shape_z), pooling='mean')
+        model = VGGFace(model='vgg16', include_top=False, input_shape=(modelo_constants.input_shape_x,modelo_constants.input_shape_y,modelo_constants.input_shape_z), pooling='mean')
         
         embedding_original = model.predict(my_face_picture)
         embedding_customer = model.predict(face_return)
