@@ -4,7 +4,7 @@ En este proyecto se utilizan modelos de reconocimiento facial para detectar tu r
 
 Para detectar el rostro en una imagen, primero se utilizo un modelo de detección facial llamado Multi-Task Cascaded Convolutional Neural Networks (MTCNN), que es capaz de detectar múltiples rostros en una imagen.
 
-Una vez detectado el rostro en la imagen, se utiliza el modelo VGGFace para generar un embedding (caracterización) del rostro. El modelo VGGFace es una red neuronal convolucional profunda diseñada específicamente para tareas de reconocimiento facial y ha sido entrenado con millones de imágenes de rostros. El embedding generado se compara con el embedding del rostro que se quiere detectar, utilizando la distancia coseno como métrica de similitud.
+Una vez detectado el rostro en la imagen, se utiliza el modelo VGGFace para generar un embedding (caracterización) del rostro. El modelo VGGFace es una red neuronal convolucional profunda diseñada específicamente para tareas de reconocimiento facial y ha sido entrenado con millones de imágenes de rostros. El embedding generado se comparó con el embedding del rostro que se quiere detectar, utilizando la distancia coseno como métrica de similitud.
 
-Como se menciono anteriormente, la implementación del modelo se realizó utilizando FastAPI y se dockerizó para facilitar su uso y distribución. 
+Como se menciono anteriormente, la implementación del modelo se realizó utilizando FastAPI y Docker. 
 
